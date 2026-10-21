@@ -1,4 +1,6 @@
 # Unit Tests
+//TODO: the required tests for both parts with expected/actual results and pass/fail. Also record the final clean-extraction
+build test.
 
 ## 2048
 Record starting state/input, expected result, actual result, and pass/fail in tests.md. Include board values. Separate the
