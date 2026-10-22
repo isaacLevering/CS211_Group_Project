@@ -7,9 +7,9 @@
 ## **Group 15**
 
 ## **Contribuators:**
-    Isaac Levering | isaacLevering 
-    b.
-    c.
+    Isaac Levering  | isaacLevering 
+    Presley Henning | PCH0908
+    Logan Turner    | ME-Engineer2
 
 ## **Repository URL:** https://github.com/isaacLevering/CS211_Group_Project
 
@@ -30,3 +30,14 @@
             equivalent.
             3. Sum all the resulting values, including unchanged digits.
             4. The number passes the Luhn checksum exactly when the sum is divisible by 10.
+
+### Task Plan
+    Stage   |  Target
+    ------- | -----------------------------------------------------------------------------------------------------------
+    Week 1  | Set up Git/GitHub and the group repository. Merge setup and left-movement PRs; begin the remaining 2048
+            | directions. Share the repository link through Blackboard.
+    Week 2  | Merge the remaining 2048 features and save/load after review; complete and review Luhn. Test the integrated
+            | code and share a short progress update.
+    Week 3  | Complete final tests and documentation. Review and merge the packaging PR, update main, and test the
+            | Blackboard ZIP before submission.
+           
