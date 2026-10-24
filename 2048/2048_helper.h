@@ -5,10 +5,10 @@ using namespace std;
 
 void move_left(int board[][5], int numrows = 5)
 {
-	    for (int i = 0; i < 5; ++i) 
+	  for (int i = 0; i < 5; ++i) 
 		{
         int targetlocation = 0;
-		//goal for all numbers
+		//goal location for all numbers to start
         bool merged[5] = {false,false,false,false,false};
 //this array tracks merges on each row to insure no double merge
 
@@ -20,9 +20,10 @@ void move_left(int board[][5], int numrows = 5)
                 int val = board[i][j];
                 board[i][j] = 0;
 
-                // Check if we can merge with the previous tile
+                // can this be merged?
                 if (targetlocation > 0 and board[i][targetlocation - 1] == val and !merged[targetlocation - 1]) {
                     board[i][targetlocation - 1] *= 2;
+					//the actual merge happens here
                     merged[targetlocation - 1] = true;
                 } 
 				else 
