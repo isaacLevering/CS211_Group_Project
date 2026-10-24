@@ -5,7 +5,36 @@ using namespace std;
 
 void move_left(int board[][5], int numrows = 5)
 {
-	//CODE HERE
+	    for (int i = 0; i < 5; ++i) 
+		{
+        int targetlocation = 0;
+		//goal for all numbers
+        bool merged[5] = {false,false,false,false,false};
+//this array tracks merges on each row to insure no double merge
+
+        for (int j = 0; j < 5; ++j) 
+		{
+            if (board[i][j] != 0)
+			 {
+				//this starts the move and weeds out zeroes
+                int val = board[i][j];
+                board[i][j] = 0;
+
+                // Check if we can merge with the previous tile
+                if (targetlocation > 0 and board[i][targetlocation - 1] == val and !merged[targetlocation - 1]) {
+                    board[i][targetlocation - 1] *= 2;
+                    merged[targetlocation - 1] = true;
+                } 
+				else 
+				{
+                    board[i][targetlocation] = val;
+					//sets the furthest left 0 value to the number
+                    targetlocation++;
+                }
+			}
+            
+        }
+    }
 }
 
 void move_right(int board[][5], int numrows = 5)
@@ -78,5 +107,3 @@ void insert_random(int board[][5], int numrows = 5)
 		}
 
 	}
-}
-
